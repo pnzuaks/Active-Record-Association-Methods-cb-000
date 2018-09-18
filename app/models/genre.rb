@@ -16,6 +16,6 @@ class Genre < ActiveRecord::Base
     self.artists.each do |artist|
       artist_names.push(artist.name)
     end
-
+    artist_names
   end
 end
